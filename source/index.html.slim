@@ -5,7 +5,7 @@ header#header
     nav.navbar.navbar-default.navbar-static-top role="banner"
         .container
             .navbar-header
-                button.navbar-toggle data-target=".navbar-collapse" data-toggle="collapse" type="button" 
+                button.navbar-toggle.collapsed data-target="#navbarmenu" data-toggle="collapse" type="button" 
                     span.sr-only Toggle navigation
                     span.icon-bar
                     span.icon-bar
@@ -13,7 +13,7 @@ header#header
                 .navbar-brand
                     = link_to '/' do
                         h1 九州PCカンファレンスin北九州
-            .navbar-collapse.collapse
+            #navbarmenu.collapse.navbar-collapse
                 .menu
                     ul.nav.nav-tabs role="tablist"
                         li role="presentation"
