@@ -39,16 +39,17 @@ end
 
 # Build-specific configuration
 configure :build do
-  activate :minify_html, :remove_quotes => false, :remove_intertag_spaces => true
+end
 
-  # Minify CSS on build
-  activate :minify_css
+activate :minify_html, :remove_quotes => false, :remove_intertag_spaces => true
 
-  # Minify Javascript on build
-  activate :minify_javascript,
+# Minify CSS on build
+activate :minify_css
+
+# Minify Javascript on build
+activate :minify_javascript,
     compressor: proc {
         ::Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
     }
-end
 
 activate :gzip
