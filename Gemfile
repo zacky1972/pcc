@@ -19,3 +19,5 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 
 gem 'middleman-minify-html'
+gem 'therubyracer' # faster JS compiles
+gem 'oj' # faster JS compiles

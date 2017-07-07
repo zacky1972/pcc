@@ -1,6 +1,8 @@
 require 'slim'
 set :slim, { :pretty => true, :sort_attrs => false, :format => :html }
 
+require "uglifier"
+
 ###
 # Page options, layouts, aliases and proxies
 ###
@@ -43,5 +45,10 @@ configure :build do
   activate :minify_css
 
   # Minify Javascript on build
-  activate :minify_javascript
+  activate :minify_javascript,
+    compressor: proc {
+        ::Uglifier.new(:output => {:comments => :copyright, :indent_level => 2})
+    }
 end
+
+activate :gzip
