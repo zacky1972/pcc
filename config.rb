@@ -47,7 +47,7 @@ configure :build do
   # Minify Javascript on build
   activate :minify_javascript,
     compressor: proc {
-        ::Uglifier.new(:output => {:comments => :copyright, :indent_level => 2})
+        ::Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
     }
 end
 
