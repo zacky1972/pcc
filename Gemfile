@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'slim', '>= 3.0'
 
 gem 'bootstrap-sass'
+gem 'jquery-middleman'
 
 # For faster file watcher updates on Windows:
 gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
@@ -13,10 +14,8 @@ gem 'wdm', '~> 0.1.0', platforms: [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw]
 
 # Middleman Gems
-gem 'middleman-sprockets', '>= 4.0.0'
-gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman', '>= 4.0.0'
-gem 'middleman-livereload'
+gem 'middleman-sprockets'
 
 gem 'middleman-minify-html'
 gem 'therubyracer' # faster JS compiles

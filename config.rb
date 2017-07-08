@@ -7,6 +7,13 @@ require "uglifier"
 # Page options, layouts, aliases and proxies
 ###
 
+# Sprockets
+activate :sprockets
+
+after_configuration do
+    sprockets.append_path File.join( root, "bower_components/" )
+end
+
 # Per-page layout changes:
 #
 # With no layout
@@ -27,7 +34,7 @@ page '/*.txt', layout: false
 
 # Reload the browser automatically whenever files change
 configure :development do
-   activate :livereload
+   # activate :livereload
 end
 
 # Methods defined in the helpers block are available in templates
@@ -47,9 +54,9 @@ activate :minify_html, :remove_quotes => false, :remove_intertag_spaces => true
 activate :minify_css
 
 # Minify Javascript on build
-activate :minify_javascript,
-    compressor: proc {
-        ::Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
-    }
+#activate :minify_javascript,
+#    compressor: proc {
+#        ::Uglifier.new(:mangle => {:toplevel => true}, :compress => {:unsafe => true}, :output => {:comments => :none})
+#    }
 
-activate :gzip
+#activate :gzip
