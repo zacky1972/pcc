@@ -17,18 +17,30 @@ header#header
                 .menu
                     ul.nav.nav-tabs role="tablist"
                         li role="presentation"
-                            = link_to '日程', '#'
+                            = link_to '日程', '', :anchor => 'date'
                         li role="presentation"
-                            = link_to '参加のお申し込み', '#' 
+                            = link_to '参加のお申し込み', '', :anchor => 'regist' 
                         li role="presentation"
-                            = link_to '分科会発表お申し込み', '#' 
+                            = link_to '分科会発表お申し込み', '', :anchor => 'regist_presen'
                         li role="presentation"
-                            = link_to '連絡先', '#' 
+                            = link_to '連絡先', '', :anchor => 'contact' 
 
 .container
     h1 テーマ
     h2 開催要旨
     .text-right 2017九州PCカンファレンスin北九州 実行委員会
+
+    a name="date" 
+        h2 日程
+
+    a name="regist"
+        h2 参加のお申し込み
+
+    a name="regist_presen"
+        h2 分科会発表お申し込み
+    
+    a name="contact"
+        h2 連絡先
 
 .footer
     footer
