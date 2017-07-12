@@ -11,14 +11,14 @@ $brown: #916351;
 
 $title-bg-color: $green;
 $title-bg-color-dark: darken($title-bg-color, 25%);
-$title-fg-color: #fff;
+$title-fg-color: $yellow;
 $h2-border-color: $light-blue;
 $footer-bg-color: $green;
 $footer-bg-color-dark: darken($footer-bg-color, 25%);
-$footer-fg-color: #fff;
+$footer-fg-color: $yellow;
 $subfooter-bg-color: $brown;
 $subfooter-bg-color-dark: darken($subfooter-bg-color, 25%);
-$subfooter-fg-color: #ccc;
+$subfooter-fg-color: $yellow;
 $subfooter-border-color: $dark-blue;
 
 @media print {
