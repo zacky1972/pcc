@@ -123,6 +123,7 @@ a {
     font-size: 48px;
     
     // 縁取り
+    /*
     filter:dropshadow(color=#000000,offX= 0,offY=-1)
     dropshadow(color=#000000,offX= 1,offY= 0)
     dropshadow(color=#000000,offX= 0,offY= 1)
@@ -131,6 +132,7 @@ a {
     -webkit-text-stroke-width: 1px;
     text-shadow: black 1px 1px 0px, black -1px 1px 0px,
                  black 1px -1px 0px, black -1px -1px 0px;
+    */
   }
 }
 
