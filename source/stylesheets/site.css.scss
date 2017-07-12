@@ -171,16 +171,16 @@ a {
       color: $title-fg-color;
       padding: 15px;
       &:hover {
-        color: #272727;
+        color: $title-bg-color;
         background: $title-fg-color;
       }
     }
     a.active {
-      color: #555;
+      color: $title-bg-color;
       cursor: default;
       background-color: $title-fg-color;
       border: 1px solid $title-fg-color;
-      border-bottom-color: $title-fg-color;
+      border-color: $title-fg-color;
     }
   }
 }
