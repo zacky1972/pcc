@@ -4,6 +4,7 @@
 @import "normalize";
 
 $green: #9FFBD9;
+$dark-green: #529B14;
 $yellow: #FFFBBA;
 $light-blue: #57AFFC;
 $dark-blue: #183358;
@@ -11,7 +12,7 @@ $brown: #916351;
 
 $title-bg-color: $green;
 $title-bg-color-dark: darken($title-bg-color, 25%);
-$title-fg-color: $yellow;
+$title-fg-color: $dark-green;
 $h2-border-color: $light-blue;
 $footer-bg-color: $green;
 $footer-bg-color-dark: darken($footer-bg-color, 25%);
